@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- get = destination.html?user_name=sabeer&user_age=23-->
+    <!-- post = destination.html-->
+    <form action="destination.html">
+      <!-- <input type="button" value="Save <b>Now</b>"/> -->
+      <h1>Contact Us</h1>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div><label>Name:</label><input required name="user_name" /></div>
+        <br />
+
+        <div>
+          <label>Age:</label
+          ><input type="number" required name="user_age" min="18" max="30" />
+        </div>
+        <br />
+
+        <div>
+          <label>DOB:</label
+          ><input type="date" name="user_dob" min="2000-01-3" />
+        </div>
+        <br />
+
+        <div><label>Email:</label><input type="email" name="user_email" /></div>
+        <br />
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend>Work Information</legend>
+      <div><label>Company:</label><input name="user_company" /></div>
+      <br />
+
+      <div><label>Designation:</label><input name="user_designation" /></div>
+      <br />
+
+      </fieldset>
+      <br/>
+      <button type="submit">Submit</button>
+      <button type="button">Normal</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
